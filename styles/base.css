@@ -107,6 +107,7 @@ section {
 }
 body {
     line-height: 1;
+    box-sizing: border-box;
 }
 ol,
 ul {
@@ -126,4 +127,81 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0%;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1920px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    padding: 24px 80px;
+    gap: 40px;
+}
+
+header a {
+    color: #000000;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.banner {
+    display: flex;
+    position: relative;
+}
+
+.img-left {
+    width: 50%;
+    padding: 300px 80px;
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true')
+        no-repeat center center / cover;
+}
+
+.img-right {
+    width: 50%;
+    padding: 300px 80px;
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true')
+        no-repeat center center / cover;
+    position: relative;
+}
+
+.page-title {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    text-align: start;
+    color: #0027d5;
+}
+
+.page-title h1 {
+    font-weight: 900;
+    font-size: 120px;
+    width: 688px;
+}
+
+.page-title h2 {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: start;
 }
