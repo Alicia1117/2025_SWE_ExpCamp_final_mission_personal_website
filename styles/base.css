@@ -164,7 +164,7 @@ header a {
     font-size: 28px;
 }
 
-.banner {
+.hero-section {
     display: flex;
     position: relative;
 }
@@ -187,21 +187,49 @@ header a {
 .page-title {
     position: absolute;
     top: 50%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    max-width: 90%;
     text-align: start;
     color: #0027d5;
+    padding: 0 16px;
 }
 
 .page-title h1 {
     font-weight: 900;
-    font-size: 120px;
-    width: 688px;
+    font-size: clamp(52px, 8vw, 120px);
+    width: 100%;
 }
 
 .page-title h2 {
     font-weight: 700;
-    font-size: 28px;
-    text-align: start;
+    font-size: clamp(28px, 2vw, 28px);
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .img-left,
+    .img-right {
+        width: 100%;
+    }
+    .img-left {
+        height: 375px;
+        background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/index/Hero%20Section.png?raw=true')
+            no-repeat center center / cover;
+    }
+
+    .img-right {
+        height: 180px;
+        padding: 24px;
+    }
+
+    .page-title {
+        width: 100%;
+        padding: 0;
+        transform: translate(-50%, -50%);
+    }
 }
