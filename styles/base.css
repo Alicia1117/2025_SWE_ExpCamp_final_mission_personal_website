@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
@@ -129,8 +131,6 @@ table {
     border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
-
 *,
 *::before,
 *::after {
@@ -143,6 +143,7 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 1.5;
     letter-spacing: 0%;
+    background: #fbfbfb;
 }
 
 a {
@@ -208,6 +209,33 @@ header a {
     width: 100%;
 }
 
+.contact-info-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0;
+}
+
+.contact-info-icons .email {
+    font-size: 32px;
+    text-align: center;
+}
+
+.contact-info-icons .icons img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    padding: 24px 0;
+    background: white;
+}
+
+footer p {
+    color: #000000;
+}
+
 @media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
@@ -229,10 +257,7 @@ header a {
         height: 180px;
         padding: 24px;
     }
-
-    .page-title {
-        width: 100%;
-        padding: 0;
-        transform: translate(-50%, -50%);
+    .contact-info-icons {
+        display: none;
     }
 }
