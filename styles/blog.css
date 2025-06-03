@@ -31,11 +31,14 @@
 .search-bar-container {
     display: flex;
     justify-content: start;
-    padding: 0 17vw;
+    padding: 0 16px;
+    max-width: 1296px;
+    margin: 0 auto;
 }
 
 .search-bar {
-    width: 416px;
+    width: 100%;
+    max-width: 416px;
     height: 56px;
     border: solid 1px #4b4b4b;
     border-radius: 40px;
@@ -201,9 +204,11 @@
     }
 
     .search-bar-container {
-        display: flex;
-        justify-content: start;
-        padding: 0;
+        padding: 0 16px;
+    }
+
+    .search-bar {
+        margin: 40px 0;
     }
 
     .card-container {
